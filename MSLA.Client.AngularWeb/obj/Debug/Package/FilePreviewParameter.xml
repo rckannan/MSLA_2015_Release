@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="Default web site/ArrorUI" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\Pjts\\MSLA_2015_Release\\MSLA_2015_Release\\MSLA\.Client\.AngularWeb\\obj\\Debug\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\Pjts\\MSLA_2015_Release\\MSLA_2015_Release\\MSLA\.Client\.AngularWeb\\obj\\Debug\\Package\\PackageTmp$" />
+  </parameter>
+</parameters>

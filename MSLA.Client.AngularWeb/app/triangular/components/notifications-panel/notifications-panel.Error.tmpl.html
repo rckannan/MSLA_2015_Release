@@ -1,0 +1,15 @@
+<md-content>
+    <md-list> 
+        <md-list-item class="md-3-line" ng-repeat="email in ::triExceptionController.exceptions" ng-click="vm.openMail(email)" layout-align="space-between center">
+            <md-icon md-font-icon="{{::email.icon}}" ng-style="{ color: email.color }"></md-icon>
+            <div class="md-list-item-text">
+                <div class="email-inbox-list-item-name-time" layout="row" layout-align="space-between start">
+                    <h6 class="md-body-1">{{::email.Ex}}</h6>
+
+                    <p class="md-body-2" am-time-ago="::email.timestamp"></p>
+                </div>
+            </div>
+            <md-divider ng-hide="$last"></md-divider>
+        </md-list-item>  
+    </md-list>
+</md-content>

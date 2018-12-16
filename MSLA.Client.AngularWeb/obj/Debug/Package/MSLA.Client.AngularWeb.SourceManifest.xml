@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="D:\Pjts\MSLA_2015_Release\MSLA_2015_Release\MSLA.Client.AngularWeb\obj\Debug\Package\PackageTmp" />
+  <setAcl path="D:\Pjts\MSLA_2015_Release\MSLA_2015_Release\MSLA.Client.AngularWeb\obj\Debug\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="D:\Pjts\MSLA_2015_Release\MSLA_2015_Release\MSLA.Client.AngularWeb\obj\Debug\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

@@ -1,0 +1,6 @@
+D:\Projects\MSLA_2015_Release\MSLA.Server_WebService\bin\MSLA.Server_WebService.dll.config
+D:\Projects\MSLA_2015_Release\MSLA.Server_WebService\bin\MSLA.Server_WebService.dll
+D:\Projects\MSLA_2015_Release\MSLA.Server_WebService\bin\MSLA.Server_WebService.pdb
+D:\Projects\MSLA_2015_Release\MSLA.Server_WebService\obj\Debug\MSLA.Server_WebService.csprojResolveAssemblyReference.cache
+D:\Projects\MSLA_2015_Release\MSLA.Server_WebService\obj\Debug\MSLA.Server_WebService.dll
+D:\Projects\MSLA_2015_Release\MSLA.Server_WebService\obj\Debug\MSLA.Server_WebService.pdb

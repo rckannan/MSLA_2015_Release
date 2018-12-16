@@ -1,0 +1,100 @@
+﻿<md-dialog flex="60" flex-xs="100">
+    <md-toolbar class="toolbar-default">
+        <div class="md-toolbar-tools">
+            <h2 flex translate>Users</h2>
+            <md-button class="md-icon-button" ng-click="vm.cancelClick()" aria-label="cancel">
+                <md-icon md-font-icon="zmdi zmdi-close"></md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
+    <form name="Userform">
+        <md-dialog-content class="md-dialog-content" md-dynamic-height md-border-bottom>
+
+            <md-input-container class="md-block">
+                <label>Username</label>
+                <input type="text" name="fldUserName" ng-model="vm.BusinessObject.propertyBag.fldUserName" required>
+
+                <div ng-messages="Userform.fldUserName.$error">
+                    <div ng-message when="required"><span translate>User Name should not be empty.</span></div>
+                </div>
+
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label>Password</label>
+                <input type="password" ng-model="vm.BusinessObject.propertyBag.fldPassword">
+            </md-input-container>
+
+            <md-input-container class="md-block">
+                <label>Full user Name</label>
+                <input type="text" ng-model="vm.BusinessObject.propertyBag.fldFullUserName" name="fldFullUserName">
+                <div ng-messages="Userform.fldFullUserName.$error">
+                    <div ng-message when="required"><span translate>Full User Name should not be empty.</span></div>
+                </div>
+            </md-input-container>
+
+            <div layout layout-xs="column" flex>
+                <md-input-container flex>
+                    <label translate>Email Address</label>
+                    <input type="email" name="fldEmailAddress" ng-model="vm.BusinessObject.propertyBag.fldEmailAddress" required>
+                    <div ng-messages="Userform.fldEmailAddress.$error">
+                        <div ng-message when="required">
+                            <span translate>vm.user.fldEmailAddress.PLEASE-ENTER</span>
+                        </div>
+                    </div>
+                </md-input-container>
+
+                <md-input-container flex>
+                    <label translate>Group</label>
+                    <input type="text" name="fldGroupName" ng-model="vm.BusinessObject.propertyBag.fldGroupName" required>
+                    <div ng-messages="Userform.fldGroupName.$error">
+                        <div ng-message when="required">
+                            <span translate>vm.user.fldGroupName.PLEASE-ENTER</span>
+                        </div>
+                    </div>
+                </md-input-container>
+                <md-input-container flex>
+                    <label translate>Domain</label>
+                    <input type="text" name="Domain" ng-model="vm.BusinessObject.propertyBag.fldDomainName" required>
+                    <div ng-messages="Userform.fldDomainName.$error">
+                        <div ng-message when="required">
+                            <span translate>Fvm.user.fldDomainName.PLEASE-ENTER</span>
+                        </div>
+                    </div>
+                </md-input-container>
+            </div>
+
+            <md-input-container class="md-block">
+                <md-checkbox class="md-primary" ng-model="vm.BusinessObject.propertyBag.fldActiveUser" aria-label="is Active">
+                    is Active
+                </md-checkbox>
+
+                <md-checkbox class="md-primary" ng-model="vm.BusinessObject.propertyBag.fldForceChangePassword" aria-label="Force Password Change?">
+                    Force Password Change?
+                </md-checkbox>
+            </md-input-container>
+
+            <!--<md-content class="md-block">
+                <label translate>Date</label>
+                <md-datepicker ng-model="vm.user.fldPasswordLastUpdated"> </md-datepicker>
+            </md-content>
+
+            <md-datepicker class="md-block" ng-model="vm.user.fldPasswordLastUpdated">
+                <label translate>Date</label>
+            </md-datepicker>-->
+
+
+
+        </md-dialog-content>
+        <md-dialog-actions layout="row">
+            <span flex >{{vm.statusText}}</span>
+            
+            <md-button class="md-primary" ng-click="vm.cancelClick()" aria-label="{{'Cancel' | translate}}">Cancel</md-button>
+            <md-button ng-click="vm.okClick();form.$setPristine()" class="md-primary" ng-disabled="login.$invalid" aria-label="{{Save | translate}}">Save</md-button>
+            
+        </md-dialog-actions>
+        
+    </form>
+</md-dialog>
+
+
+ 

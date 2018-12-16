@@ -1,0 +1,5 @@
+D:\Pjts\MSLA_2015_Release\MSLA_2015_Release\MSLA.Server.BO\bin\Debug\MSLA.Server.BO.dll
+D:\Pjts\MSLA_2015_Release\MSLA_2015_Release\MSLA.Server.BO\bin\Debug\MSLA.Server.BO.pdb
+D:\Pjts\MSLA_2015_Release\MSLA_2015_Release\MSLA.Server.BO\obj\Debug\MSLA.Server.BO.csprojResolveAssemblyReference.cache
+D:\Pjts\MSLA_2015_Release\MSLA_2015_Release\MSLA.Server.BO\obj\Debug\MSLA.Server.BO.dll
+D:\Pjts\MSLA_2015_Release\MSLA_2015_Release\MSLA.Server.BO\obj\Debug\MSLA.Server.BO.pdb

@@ -1,0 +1,34 @@
+<div layout="row" flex layout-padding layout-fill layout-align="center center">
+    <div flex="40" flex-lg="50" flex-md="70" flex-xs="100">
+        <md-card>
+            <md-toolbar class="padding-20">
+                <div flex layout="row" layout-align="center center">
+                    <img ng-src="{{::vm.triSettings.logo}}" alt="{{vm.triSettings.name}}">
+                </div>
+                <div layout="row" layout-align="center center">
+                    <h1 class="md-headline" translate>Arror UI</h1>
+                </div>
+            </md-toolbar>
+
+            <md-content class="md-padding">
+                <form name="login">
+                    <md-input-container class="md-block">
+                        <label for="userName" translate>User Name</label>
+                        <input id="userName" label="userName" name="userName"  ng-model="vm.user.userName"    required/>
+                        <div ng-messages="login.userName.$error" ng-if="login.userName.$dirty">
+                            <div ng-message when="required"><span translate>LOGIN.Name.PLEASE_ENTER</span></div>
+                            <div ng-message when="email"><span translate>LOGIN.NAME.PLEASE_VALID</span></div>
+                        </div>
+                    </md-input-container>
+
+                    <md-button class="md-raised md-primary full-width margin-left-0 margin-right-0 margin-top-10 margin-bottom-10" ng-click="vm.loginClick()"
+                               ng-show="vm.showLogin"
+                               ng-disabled="login.$invalid" translate="LOGIN" aria-label="{{'LOGIN' | translate}}"></md-button>
+
+                    <div><span>{{vm.message}}</span></div>
+                    <!--<div><span>{{vm.errmessage}}</span></div>-->
+                </form>
+            </md-content>
+        </md-card>
+    </div>
+</div>

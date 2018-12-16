@@ -1,0 +1,6 @@
+D:\Projects\MSLA_2015_Release\MSLA.Client\obj\Debug\MSLA.Client.csprojResolveAssemblyReference.cache
+D:\Projects\MSLA_2015_Release\MSLA.Client\obj\Debug\SmartTools\GridExportTool.g.cs
+D:\Projects\MSLA_2015_Release\MSLA.Client\obj\Debug\SmartTools\ItemSelector.g.cs
+D:\Projects\MSLA_2015_Release\MSLA.Client\obj\Debug\SmartTools\SmartComboCumAutoCompleteBox.g.cs
+D:\Projects\MSLA_2015_Release\MSLA.Client\obj\Debug\SmartTools\waitEffect.g.cs
+D:\Projects\MSLA_2015_Release\MSLA.Client\obj\Debug\MSLA.Client.g.resources

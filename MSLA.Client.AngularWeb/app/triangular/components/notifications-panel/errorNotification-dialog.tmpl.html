@@ -1,0 +1,82 @@
+﻿<md-dialog class="order-dialog mobile-fullwidth-dialog" flex="60" flex-xs="100">
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h2 flex="" >
+        <span translate="">Error </span>
+        <span>{{vm.email.Ex}}</span>
+      </h2>
+      <md-button class="md-icon-button" ng-click="vm.printClick()" aria-label="print">
+        <md-icon md-font-icon="zmdi zmdi-print"></md-icon>
+      </md-button>
+      <md-button class="md-icon-button" ng-click="vm.cancelClick()" aria-label="cancel">
+        <md-icon md-font-icon="zmdi zmdi-close"></md-icon>
+      </md-button>
+    </div>
+  </md-toolbar>
+
+    <md-dialog-content class="md-dialog-content">
+        <div flex="" layout="row" class="margin-bottom-10">
+            <div flex="">
+                <strong>Menu</strong>
+            </div>
+            <div flex="">
+                <span>{{vm.email.menu}}</span>
+            </div>
+        </div>
+    <div flex="" layout="row" class="margin-bottom-10">
+      <div flex="">
+        <strong>Error raised</strong>
+      </div>
+      <div flex="">
+        <span>{{vm.email.timestamp  | amDateFormat:'MMMM Do YYYY, h:mm:ss a'}}</span>
+      </div>
+    </div>
+    <div flex="" layout="row" class="margin-bottom-10">
+      <div flex="">
+        <strong translate="">Exception</strong>
+      </div>
+      <div flex="">
+        <span>{{vm.email.Ex}}</span>
+      </div>
+    </div>
+    <div flex="" layout="row" class="margin-bottom-10">
+      <div flex="">
+        <strong translate="">Status</strong>
+      </div>
+      <div flex="">
+        <span>{{vm.email.status}}</span>
+      </div>
+    </div>
+    <div flex="" layout="row" class="margin-bottom-10">
+      <div flex="">
+        <strong translate="">Status Detail</strong>
+      </div>
+      <div flex="">
+        <span>{{vm.email.statusText}}</span>
+      </div>
+    </div>
+
+    <md-divider class="margin-bottom-40 margin-top-40"></md-divider>
+
+    <div flex="" layout="row" class="margin-bottom-10">
+      <div flex="">
+        <strong translate="">Exception detail</strong>
+      </div>
+    </div>
+
+
+    <div flex="" layout="row" class="margin-bottom-10">
+
+      <div flex="">
+        <span>{{vm.email.stack}}</span>
+      </div>
+      <div flex="">
+        <span>{{vm.email.stackArg}}</span>
+      </div>
+    </div>
+
+    <md-dialog-actions layout="row">
+      <span flex=""></span>
+      <md-button ng-click="vm.okClick()" class="md-primary" aria-label="{{Close | translate}}" translate="Close"></md-button>
+    </md-dialog-actions>
+  </md-dialog>

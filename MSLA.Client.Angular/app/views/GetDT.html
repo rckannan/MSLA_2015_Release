@@ -1,0 +1,94 @@
+﻿
+<div class="row">
+    <div class="col-md-2">
+        &nbsp;
+    </div>
+ 
+    <div class="col-md-8">
+        <h2>{{Menus.status}}</h2>
+        <h3>List of Menus ({{Menus.data.rows.length}})</h3>
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>fldTenor_ID</th>
+                    <th>fldTenor</th>
+                    <th>fldDesc</th>
+                    <th>fldLastupdated</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-ng-repeat="token in Menus.data.rows">
+                    
+                    <td>
+                        {{ token.fldTenor_ID }}
+                    </td>
+                    <td>
+                        {{ token.fldTenor }}
+                    </td>
+                    <td>
+                        {{ token.fldDesc   }}
+                    </td>
+                    <td>
+                        {{ token.fldLastupdated }}
+                    </td>
+
+                  
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="col-md-12">
+        <form role="form">
+            <div class="row">
+                <div class="col-md-2">
+                    &nbsp;
+                </div>
+                <div class="col-md-4">
+                    <h2 class="form-login-heading">Login</h2>
+                    <input type="text" class="form-control" placeholder="Req Object" data-ng-model="Reqobj.RequestObject" required autofocus> 
+                     
+                    <button class="btn btn-md btn-info btn-block" type="submit" data-ng-click="GetData()">Submit</button>
+                    
+                </div> 
+            </div>
+
+            <div class="col-md-8">
+                <h2 ng-model="EiborRes.status"></h2>
+                <h6 ng-model="EiborRes.data.rows.length"></h6>
+                <h3>List of Data ({{EiborRes.data.rows.length}})</h3>
+                <table class="table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>fldTenor_ID</th>
+                            <th>fldTenor</th>
+                            <th>fldDesc</th>
+                            <th>fldLastupdated</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-ng-repeat="token in EiborRes.data.rows">
+
+                            <td>
+                                {{ token.fldTenor_ID }}
+                            </td>
+                            <td>
+                                {{ token.fldTenor }}
+                            </td>
+                            <td>
+                                {{ token.fldDesc   }}
+                            </td>
+                            <td>
+                                {{ token.fldLastupdated }}
+                            </td>
+
+
+                        </tr>
+                    </tbody>
+                </table>
+</form>
+
+        
+        </div>
+    </div>
+</div>

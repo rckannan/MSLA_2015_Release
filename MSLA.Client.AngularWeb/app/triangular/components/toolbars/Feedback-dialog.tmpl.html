@@ -1,0 +1,48 @@
+﻿<md-dialog flex="60" flex-xs="100">
+    <md-toolbar class="toolbar-default">
+        <div class="md-toolbar-tools">
+            <h2 flex translate>Feedback</h2>
+            <md-button class="md-icon-button" ng-click="vm.cancelClick()" aria-label="cancel">
+                <md-icon md-font-icon="zmdi zmdi-close"></md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
+    <md-dialog-content class="md-dialog-content" md-dynamic-height md-border-bottom>
+        <!--<md-card>
+            <md-card-content>-->
+                <md-input-container class="md-block">
+                    <label>Menu</label>
+                    <input id="menu" label="menu" name="menu" type="text" ng-model="vm.feedBackDetail.menu" required readonly="">
+                    <div ng-messages="vm.feedBackDetail.menu.$error">
+                        <div ng-message="required">
+                            Please enter your menu.
+                        </div>
+                        <div ng-message="Menu">
+                            Please enter a valid menu.
+                        </div>
+                    </div>
+                </md-input-container>
+
+                <md-input-container class="md-block">
+                    <label>Comments</label>
+                    <!--<input id="Comments" label="Comments" name="Comments" type="text" ng-model="vm.feedBackDetail.description" required>-->
+                    <textarea id="Comments" label="Comments" name="Comments" ng-model="vm.feedBackDetail.description" md-maxlength="8000" rows="5" 
+                              md-select-on-focus required></textarea>
+                    <div ng-messages="vm.feedBackDetail.description.$error">
+                        <div ng-message="required">
+                            Please enter your comments.
+                        </div>
+                        <div ng-message="Comments">
+                            Please enter a valid comments.
+                        </div>
+                    </div>
+                </md-input-container>
+            <!--</md-card-content>
+        </md-card>-->
+</md-dialog-content>
+    <md-dialog-actions layout="row">
+        <span flex></span>
+        <md-button ng-click="vm.cancelClick()" aria-label="{{'Cancel' | translate}}"  >Cancel</md-button>
+        <md-button ng-click="vm.okClick()" class="md-primary" aria-label="{{Save | translate}}"  >Save</md-button>
+    </md-dialog-actions>
+</md-dialog>
